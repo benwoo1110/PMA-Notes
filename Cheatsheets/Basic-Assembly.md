@@ -1,5 +1,5 @@
 # x86 Registers
-![](../Images/Basic-Assembly-x86-registers.png)
+![](../Images/Basic-Assembly-00.png)
 
 ### EAX
  - Multiplication
@@ -43,4 +43,54 @@
 | DT | Ten bytes | 10b |
 
 # Common Instructions
+
+## Basic
+ - MOV
+ - LEA
+
+## Math
+ - SUB
+ - ADD
+ - INC
+ - DEC
+ - MUL
+ - DIV
+
+## Bitwise Math
+ - AND
+   - ZF = 1 if none of bits matches
+   - ZF = 0 if at least 1 bit matches
+ - OR
+ - XOR
+   - Useful way to invert specific bit(s) in an operand
+   - Can also be used to reset stored value back to 0
+ - NOT
+   - Invert all the bits
+ - SHL
+ - ROR
+
+## Comparisons
+ - TEST 
+   - Nondestructive AND operation between 2 operands
+   - No operands are modified
+   - Zero flag is affected
+ - CMP
+   - Nondestructive subtraction of source from destination
+   - destination == source: ZF = 1, CF = 0
+   - destination < source: ZF = 0, CF = 1
+   - destination > source: ZF = 0, CF = 0
+
+## Jumps
+### Jumps Based on Specific Flags
+![](../Images/Basic-Assembly-01.png)  
+
+### Jumps Based on Equality
+![](../Images/Basic-Assembly-03.png)  
+
+### Jumps Based on Unsigned Comparisons
+![](../Images/Basic-Assembly-04.png)  
+
+### Jumps Based on Signed Comparisons
+![](../Images/Basic-Assembly-05.png)  
+
 
