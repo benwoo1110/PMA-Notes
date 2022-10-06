@@ -20,12 +20,12 @@ for i, imagename in enumerate(imagematches, 1):
         print("Image file does not exist")
         continue
 
-    newimagefile = Path(folder, "Images", f"{filepath.stem}-{i:02d}.png")
+    newimagefile = Path("Images", f"{filepath.stem}-{i:02d}.png")
     
     imagefile.rename(newimagefile)
-    data.replace(imagename, f"../Images/{newimagefile.name}")
+    data = data.replace(imagename, f"../Images/{newimagefile.name}")
 
 with open(filepath, 'w') as file:
-    file.write(filepath)
+    file.write(data)
 
 print("Done!")
