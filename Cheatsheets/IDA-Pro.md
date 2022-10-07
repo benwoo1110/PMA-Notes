@@ -15,6 +15,15 @@
 
 ![](../Images/IDA-Pro-01.png)
 
+## Search
+ - Next Code: `Alt-C`
+ - Next Data: `Ctrl-D`
+ - Text: `Alt-T`
+
+## Config
+![](../Images/IDA-Pro-02.png)  
+![](../Images/IDA-Pro-03.png)  
+
 ## Plugins
 
 ### Useful List
@@ -55,15 +64,15 @@ If python install is not detected properly, use `idapyswitch.exe` to select manu
 ### Run dll files
 1. Select local debugger
 
-![](../Images/IDA-Pro-02.png)
+![](../Images/IDA-Pro-04.png)
 
 2. Set application to `C:\Windows\SysWOW64\rundll32.exe` and parameter as `<filename>, <function>`
 
-![](../Images/IDA-Pro-03.png)
+![](../Images/IDA-Pro-05.png)
 
 3. Breakpoint DLL main to check that it works
 
-![](../Images/IDA-Pro-04.png)  
+![](../Images/IDA-Pro-06.png)  
 
 ## Repair Errors
 1. Toggle between code and data
@@ -73,6 +82,11 @@ If python install is not detected properly, use `idapyswitch.exe` to select manu
 2. Modify irrelevant data to nop (`0x90`) instruction
     - Shortcut with nop plugin: `Shift-N`
 
+## Custom Theme
+ - Theme Collection: https://gist.github.com/patois/38fb7584fe6afd1689cf3b7fc464e875
+ - Add new theme into the `%IDAPRO%/themes` folder
+ - Change Theme: Go to `Options > Colors` Click on the box Current `theme > Select Dark`
+
 ## Misc
  - Save: `Ctrl+W`
- - Theme: Go to `Options > Colors` Click on the box Current `theme > Select Dark`
+ - Hexray Cheatsheet: https://www.hex-rays.com/products/ida/support/freefiles/IDA_Pro_Shortcuts.pdf

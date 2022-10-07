@@ -14,14 +14,23 @@ with open(filepath, 'r') as file:
 imagematches = re.findall(r'!\[.*\]\((.*)\)', data)
 folder = filepath.parent
 
-for i, imagename in enumerate(imagematches, 1):
-    imagefile = Path(folder, imagename)
-    if (not imagefile.is_file()):
-        print("Image file does not exist")
+print(imagematches)
+
+i = 1
+for imagename in imagematches:
+    if filepath.stem in imagename:
         continue
 
-    newimagefile = Path("Images", f"{filepath.stem}-{i:02d}.png")
+    imagefile = Path(folder, imagename)
+    if (not imagefile.is_file()):
+        print(f"Image file {imagefile} does not exist")
+        continue
     
+    newimagefile = None
+    while (newimagefile is None or newimagefile.is_file()):
+        newimagefile = Path("Images", f"{filepath.stem}-{i:02d}.png")
+        i += 1
+
     imagefile.rename(newimagefile)
     data = data.replace(imagename, f"../Images/{newimagefile.name}")
 
