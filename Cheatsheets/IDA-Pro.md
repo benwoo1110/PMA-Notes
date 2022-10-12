@@ -1,5 +1,16 @@
 # Basic Analysis shortcuts
 
+## Views
+ - Pseudocode: `F5`
+ - Strings: `Shift F12`
+ - Switch between graph & text: `space`
+
+![](../Images/IDA-Pro-01.png)
+
+## Functions
+ - Re-analysis/Detect function: `P`
+ - Set function end: `E`
+
 ## Variables
  - Rename: `n`
  - Change number base:
@@ -9,11 +20,10 @@
    - ASCII: `R`
  - Cross reference: `X`
 
-## Views
- - Pseudocode: `F5`
- - Strings: `Shift F12`
-
-![](../Images/IDA-Pro-01.png)
+## Data
+ - Switch type:
+   - Ascii: `A`
+   - Number/DWord: `D`
 
 ## Search
  - Next Code: `Alt-C`
@@ -45,6 +55,9 @@
  - Fentanyl
    - Shortcuts to help in patching code easier
    - Link: https://github.com/osirislab/Fentanyl
+ - Capa Explorer
+   - Well-defined collection of rules to identify capabilities in a program
+   - Install Link: https://github.com/mandiant/capa/blob/master/capa/ida/plugin/README.md
 
 ### Installation
 Simply move all code for plugin into the following directory:
