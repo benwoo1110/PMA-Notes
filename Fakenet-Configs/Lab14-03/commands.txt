@@ -1,0 +1,3 @@
+d http://www.practicalmalwareanalysis.com/PixelPoker.exe
+s 2
+n none
