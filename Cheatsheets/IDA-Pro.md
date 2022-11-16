@@ -1,9 +1,10 @@
-# Basic Analysis shortcuts
+# IDA Pro Guide
 
 ## Views
  - Pseudocode: `F5`
  - Strings: `Shift F12`
  - Switch between graph & text: `space`
+ - Segments: `Ctrl+S`
 
 ![](../Images/IDA-Pro-01.png)
 
@@ -18,6 +19,7 @@
    - Decimal (10): `H`
    - Hex (16): `Q`
    - ASCII: `R`
+   - Other encodings: `Alt+R`
  - Cross reference: `X`
 
 ## Data
@@ -57,6 +59,7 @@
    - Link: https://github.com/osirislab/Fentanyl
  - Capa Explorer
    - Well-defined collection of rules to identify capabilities in a program
+   - Shortcut: `Alt+F5`
    - Install Link: https://github.com/mandiant/capa/blob/master/capa/ida/plugin/README.md
 
 ### Installation
