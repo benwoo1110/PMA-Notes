@@ -41,4 +41,19 @@
  - Obscure this function by using a ret or call instruction
  - Use OS functions such as `NtContinue` or `ZwContinue` to hide OEP action
 
+## Identify Packed Programs
+
+### Indicators of a Packed Program
+ - Very few imports
+ - Only small amount of code is detected (likely stub program)
+ - Section names a particular packer software (e.g. UPX0)
+ - Abnormal section sizes, `.text` section with Size of Raw Data = 0 and Virtual Size = nonzero
+
+### Entropy Calculation
+ - Measure of the disorder in a system or program
+ - Compressed or encrypted data has higher entropy
+ - Use of heuristics by measuring entropy
+
+## Unpacking
+
 
